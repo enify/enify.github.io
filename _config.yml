@@ -1,0 +1,30 @@
+# Build配置
+permalink: /:year-:month-:day-:title.html
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+
+
+# 站点信息
+title: enify的折腾笔记
+description: enify的折腾笔记
+url: https://enify.github.io/
+rss_url: /pages/rss.xml
+
+# 作者及社交网络信息
+author:
+  name: enify
+  email: mikucube@outlook.com
+  github: https://github.com/enify
+
+
+# 评论插件
+utterances:
+  repo: enify/enify.github.io
