@@ -9,6 +9,7 @@
 - http://yansu.org （https://github.com/suyan/suyan.github.io）
 - https://yelog.org （https://github.com/yelog/yelog.github.io）
 - https://angeiv.github.io （https://github.com/angeiv/angeiv.github.io）
+- 评论统计：[Comments counts · Issue #36 · utterance/utterances](https://github.com/utterance/utterances/issues/36)
 
 ### TODO：
 - [ ] 移动端自适应

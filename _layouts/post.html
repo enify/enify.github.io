@@ -1,15 +1,18 @@
 ---
 layout: base
 ---
+{% include def.html %}
 
 <article id="post__content">
   <h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
   <div id="post__meta">
-    {% if page.date %}
+    {% if page.url == "/" %}
+    <span id="icon-pie" class="fontello"> 已写:{{ site__page_count }}篇，总字数:{{ site__word_count }}</span>
+    {% else %}
     <span id="icon-clock" class="fontello"> {{ page.date | date: "%Y-%m-%d" }}</span>
-    {% endif %}
-    {% if page.tags.size > 0 %}
     <span id="icon-tags" class="fontello"> {{ page.tags | join: ', ' }}</span>
+    <br>
+    <span id="icon-pie" class="fontello"> 字数:{{ page__word_count }} 阅读:235 评论:23</span>
     {% endif %}
   </div>
   {{ content }}

@@ -1,0 +1,12 @@
+<!-- Params of site -->
+{% assign site__page_count = site.posts | size %}
+
+{% assign site__word_count = 0 %}
+{% for post in site.posts %}
+{% assign single_count = post.content | strip_html | strip_newlines | remove: " " | size %}
+{% assign site__word_count = site__word_count | plus: single_count %}
+{% endfor %}
+
+
+<!-- Params of page -->
+{% assign page__word_count = page.content | strip_html | strip_newlines | remove: " " | size %}
