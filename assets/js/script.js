@@ -135,5 +135,17 @@ function afterPjax() {
     cache: true
   });
 
+  // Reply Plugin , See: https://github.com/apps/utterances
+  function loadReply() {
+    var rep = document.querySelector('#utterances_thread');
+    var script = document.createElement('script');
+
+    var attributes = rep.attributes;
+    $.each(attributes, function () {
+      script.setAttribute(this.name, this.value)
+    });
+    rep.replaceWith(script);
+  } loadReply();
+
 } afterPjax();
 
