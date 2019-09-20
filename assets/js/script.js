@@ -125,7 +125,15 @@ function afterPjax() {
     });
     articles.hide();
     results.fadeIn(350);
-  })
+  });
+
+  // Analyse Plugin , See: https://busuanzi.ibruce.info/
+  $.ajax({
+    type: 'GET',
+    url: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js',
+    dataType: 'script',
+    cache: true
+  });
 
 } afterPjax();
 
